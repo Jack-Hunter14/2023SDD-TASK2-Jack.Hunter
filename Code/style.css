@@ -1,1 +1,18 @@
 @charset "utf-8";
+table {
+    width: 100%
+}
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%
+}
+th, td {
+    width: 33.33%; /*older browsers fallback */
+    width: calc(100% / 3);
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.2em
+}
