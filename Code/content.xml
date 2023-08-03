@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEST>
-	<TEXT>testing</TEXT>
-</TEST>
+<!DOCTYPE content [
+<!ENTITY test "testing">
+]>
+
+<TEMPLATE>
+	<TITLE>&test;</TITLE>
+</TEMPLATE>
