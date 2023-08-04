@@ -17,6 +17,7 @@ function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var table = "<tr><th>Text</th></tr>";
     var x = xmlDoc.getElementsByTagName("TEMPLATE");
-    table += "<tr><td>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue
+    xmlDoc.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue = "new";
+    table += "<tr><td>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
     document.getElementById("list").innerHTML = table;
 }
