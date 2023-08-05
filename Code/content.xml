@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <TEMPLATE>
 	<TITLE>test</TITLE>
+	<DESCRIPTION>a bunch of text</DESCRIPTION>
+	<IMAGE>https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_1280.png</IMAGE>
 </TEMPLATE>

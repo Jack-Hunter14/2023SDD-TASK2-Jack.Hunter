@@ -15,9 +15,9 @@ function callXml() {
 
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-    var table = "<tr><th>Text</th></tr>";
     var x = xmlDoc.getElementsByTagName("TEMPLATE");
     xmlDoc.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue = "new";
-    table += "<tr><td>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+    table = "<tr><th>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "<tr><td>" + x[0].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + "<tr><td> <img src=\"" + x[0].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
+    "\" /></td></tr>";
     document.getElementById("list").innerHTML = table;
 }

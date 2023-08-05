@@ -1,18 +1,32 @@
 @charset "utf-8";
 table {
-    width: 100%
+    border: 1px solid black;
+    margin: auto;
+    width: 65%
 }
 tr {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%
 }
-th, td {
+th {
     width: 33.33%; /*older browsers fallback */
     width: calc(100% / 3);
     border: 1px solid black;
     border-collapse: collapse;
     vertical-align: middle;
     text-align: center;
-    font-size: 1.2em
+    font-size: 1.6em
+}
+td {
+    width: 33.33%; /*older browsers fallback */
+    width: calc(100% / 3);
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.3em
+}
+img {
+    width: 100px;
 }
