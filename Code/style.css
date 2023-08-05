@@ -16,6 +16,7 @@ th {
     border-collapse: collapse;
     vertical-align: middle;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.6em
 }
 td {
@@ -25,8 +26,17 @@ td {
     border-collapse: collapse;
     vertical-align: middle;
     text-align: center;
-    font-size: 1.3em
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
 }
 img {
-    width: 100px;
+    width: 150px;
+}
+button {
+    width: 5%;
+    height: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 1.3em;
 }

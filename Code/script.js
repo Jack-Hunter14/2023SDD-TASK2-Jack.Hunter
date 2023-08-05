@@ -16,7 +16,7 @@ function callXml() {
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var x = xmlDoc.getElementsByTagName("TEMPLATE");
-    xmlDoc.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue = "new";
+    xmlDoc.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue = "Wow";
     table = "<tr><th>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "<tr><td>" + x[0].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + "<tr><td> <img src=\"" + x[0].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
     "\" /></td></tr>";
     document.getElementById("list").innerHTML = table;
