@@ -2,7 +2,7 @@
 table {
     border: 1px solid black;
     margin: auto;
-    width: 65%
+    width: 60%;
 }
 tr {
     border: 1px solid black;
@@ -32,11 +32,19 @@ td {
 img {
     width: 150px;
 }
-button {
+/* button {
     width: 5%;
     height: 30px;
     position: fixed;
     bottom: 30px;
     right: 30px;
     font-size: 1.3em;
+} */
+button {
+    width: 5%;
+    height: 24px;
+    position: relative;
+    left: 915px;
+    bottom: 196px;
+    font-size: 1em;
 }
