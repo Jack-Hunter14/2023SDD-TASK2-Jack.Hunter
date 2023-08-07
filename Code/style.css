@@ -32,19 +32,19 @@ td {
 img {
     width: 150px;
 }
-/* button {
-    width: 5%;
-    height: 30px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    font-size: 1.3em;
-} */
 button {
     width: 5%;
     height: 24px;
     position: relative;
-    left: 915px;
-    bottom: 196px;
+    left: 415px;
+    bottom: 32px;
     font-size: 1em;
+}
+.plus {
+    width: 5%;
+    height: 30px;
+    position: fixed;
+    bottom: 30px;
+    left: 1400px;
+    font-size: 1.3em;
 }

@@ -16,7 +16,7 @@ function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var x = xmlDoc.getElementsByTagName("TEMPLATE");
     xmlDoc.getElementsByTagName("TITLE")[0].childNodes[0].nodeValue = "Wow";
-    table = "<tr><th>" + "yoooo" + "<tr><td>" + x[0].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + "<tr><td> <img src=\"" + x[0].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
-    "\" /></td></tr>"  + "<button>" + x[0].getElementsByTagName("REMOVE")[0].childNodes[0].nodeValue;
+    table = "<tr><th>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "<tr><td>" + x[0].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + "<button>" + x[0].getElementsByTagName("REMOVE")[0].childNodes[0].nodeValue + "<tr><td> <img src=\"" + x[0].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
+    "\" /></td></tr>";
     document.getElementById("list").innerHTML = table;
 }
