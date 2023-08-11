@@ -59,6 +59,7 @@ div {
     transform: translate(-50%, -50%);
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    display: none;
 }
 .generator {
     font-size: 1.8em;
@@ -82,4 +83,12 @@ div {
 }
 input[type="file"] {
     display: none;
+}
+.submit {
+    width: 7%;
+    height: 30px;
+    position: relative;
+    left: 670px;
+    bottom: 2px;
+    font-size: 0.7em;
 }

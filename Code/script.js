@@ -9,6 +9,12 @@ function addTemplates() {
         table += "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "<tr><td> <img src=\"" + images[i] +
         "\" /></td></tr>" + "</table>" + "<button>" + "-" + "</button>";
     }
-    console.log(table);
     document.getElementById("list").innerHTML = table;
+}
+
+function enable() {
+    document.getElementById("div").style.display = "block";
+}
+function submit() {
+    document.getElementById("div").style.display = "none";
 }
