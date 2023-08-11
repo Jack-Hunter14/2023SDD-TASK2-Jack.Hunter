@@ -1,7 +1,8 @@
 var titles = [ "Title" ];
 var descriptions = [ "Description" ];
 var images = [ "https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_1280.png" ];
-addTemplates();
+console.log(localStorage.imgList);
+loadSavedTable();
 
 function addTemplates() {
     table = "";
@@ -14,7 +15,9 @@ function addTemplates() {
         }
     }
     document.getElementById("list").innerHTML = table;
-    console.log(table);
+    localStorage.titleList = titles.join();
+    localStorage.descList = descriptions.join();
+    localStorage.imgList = images.join();
 }
 
 function enable() {
@@ -44,3 +47,13 @@ var loadFile = function(event) {
     document.getElementById("addImgDisplay").src = image;
     images.push(image);
 };
+
+function loadSavedTable() {
+    var ttl = localStorage.titleList;
+    titles = ttl.split(",");
+    var dsc = localStorage.descList;
+    descriptions = dsc.split(",");
+    console.log(localStorage.imgList);
+    images = localStorage.imgList.split(",");
+    addTemplates();
+}
