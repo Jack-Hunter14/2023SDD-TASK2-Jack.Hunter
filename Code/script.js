@@ -5,11 +5,12 @@ addTemplates();
 
 function addTemplates() {
     table = "";
-    for (let i = 0; i < images.length; i++) {
-        table += "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "<tr><td> <img src=\"" + images[i] +
-        "\" /></td></tr>" + "</table>" + "<button id =" + i + " onclick=\"remove(id)\">" + "-" + "</button>";
+    for (let i = 0; i < titles.length; i++) {
+        table += "<button id =" + i + " onclick=\"remove(id)\">" + "-" + "</button>" + "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "<tr><td> <img src=\"" + images[i] +
+        "\" /></td></tr>" + "</table>";
     }
     document.getElementById("list").innerHTML = table;
+    console.log(table);
 }
 
 function enable() {
@@ -18,10 +19,11 @@ function enable() {
 
 function submit(newTitle, newDesc) {
     document.getElementById("div").style.display = "none";
-    titles.push(newTitle.value);
-    descriptions.push(newDesc.value);
-    newTitle = "";
-    newDesc = "";
+    titles.push(newTitle);
+    descriptions.push(newDesc);
+    document.getElementById("inputTitle").value = "";
+    document.getElementById("inputDesc").value = "";
+    document.getElementById("addImgDisplay").src = "https://cdn-icons-png.flaticon.com/512/4211/4211763.png";
     addTemplates();
 }
 
