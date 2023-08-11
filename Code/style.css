@@ -72,8 +72,14 @@ div {
     height: 30px;
     font-size: 1.5em;
 }
-.inputDesc{
+.inputDesc {
     width: 500px;
     height: 150px;
     font-size: 1.5em;
+}
+.inputImg {
+    width: 70px;
+}
+input[type="file"] {
+    display: none;
 }
