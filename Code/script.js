@@ -7,7 +7,7 @@ function addTemplates() {
     table = "";
     for (let i = 0; i < images.length; i++) {
         table += "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "<tr><td> <img src=\"" + images[i] +
-        "\" /></td></tr>" + "</table>" + "<button>" + "-" + "</button>";
+        "\" /></td></tr>" + "</table>" + "<button id =" + i + " onclick=\"remove(id)\">" + "-" + "</button>";
     }
     document.getElementById("list").innerHTML = table;
 }
@@ -15,6 +15,16 @@ function addTemplates() {
 function enable() {
     document.getElementById("div").style.display = "block";
 }
-function submit() {
+function submit(newTitle, newDesc, newImg) {
     document.getElementById("div").style.display = "none";
+    titles.push(newTitle);
+    descriptions.push(newDesc);
+    images.push(newImg);
+    addTemplates();
+}
+function remove(id) {
+    titles.splice(id, 1);
+    descriptions.splice(id, 1);
+    images.splice(id, 1);
+    addTemplates();
 }
