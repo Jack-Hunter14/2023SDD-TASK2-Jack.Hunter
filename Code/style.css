@@ -7,27 +7,27 @@ table {
 tr {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 100%
+    width: 100%;
 }
 th {
     width: 33.33%; /*older browsers fallback */
     width: calc(100% / 3);
     border: 1px solid black;
     border-collapse: collapse;
-    vertical-align: middle;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.6em
+    font-size: 1.6em;
+    overflow-wrap: anywhere;
 }
 td {
     width: 33.33%; /*older browsers fallback */
     width: calc(100% / 3);
     border: 1px solid black;
     border-collapse: collapse;
-    vertical-align: middle;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
+    overflow-wrap: anywhere;
 }
 img {
     width: 150px;
