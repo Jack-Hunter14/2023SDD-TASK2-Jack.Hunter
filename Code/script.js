@@ -16,10 +16,10 @@ function enable() {
     document.getElementById("div").style.display = "block";
 }
 function submit(newTitle, newDesc, newImg) {
+    console.log(newImg);
     document.getElementById("div").style.display = "none";
     titles.push(newTitle);
     descriptions.push(newDesc);
-    images.push(newImg);
     addTemplates();
 }
 function remove(id) {
@@ -28,3 +28,10 @@ function remove(id) {
     images.splice(id, 1);
     addTemplates();
 }
+var loadFile = function(event) {
+	console.log("hi");
+    var image = document.getElementById('output');
+	image = URL.createObjectURL(event.target.files[0]);
+    document.getElementById("addImgDisplay").src = image;
+    images.push(image);
+};
