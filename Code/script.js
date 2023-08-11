@@ -6,8 +6,12 @@ addTemplates();
 function addTemplates() {
     table = "";
     for (let i = 0; i < titles.length; i++) {
-        table += "<button id =" + i + " onclick=\"remove(id)\">" + "-" + "</button>" + "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "<tr><td> <img src=\"" + images[i] +
-        "\" /></td></tr>" + "</table>";
+        if (images[i] == undefined) {
+            table += "<button id =" + i + " onclick=\"remove(id)\">" + "-" + "</button>" + "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "</td></tr>" + "</table>";
+        } else {
+            table += "<button id =" + i + " onclick=\"remove(id)\">" + "-" + "</button>" + "<table>" + "<tr><th>" + titles[i] + "<tr><td>" + descriptions[i] + "<tr><td> <img src=\"" + images[i] +
+            "\" /></td></tr>" + "</table>";
+        }
     }
     document.getElementById("list").innerHTML = table;
     console.log(table);
