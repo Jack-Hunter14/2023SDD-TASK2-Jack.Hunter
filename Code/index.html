@@ -14,12 +14,14 @@
     <div id="div">
         <table class="heading"><td class="heading"><object class="generator">Add List Item</object><br></td></table>
         <br>&nbsp Title:
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea id="inputTitle" name="inputTitle" class="inputTitle"></textarea><br><br><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea id="inputTitle" name="inputTitle" class="inputTitle"></textarea>
+        &nbsp&nbsp<input type="color" id="titleColor"><br><br><br>
         &nbsp Description:
-        &nbsp<textarea id="inputDesc" name="inputDesc" class="inputDesc"></textarea><br><br><br>
+        &nbsp<textarea id="inputDesc" name="inputDesc" class="inputDesc"></textarea>
+        &nbsp&nbsp<input type="color" id="descColor"><br><br><br>
         &nbsp Image:
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label><input type="file" id="inputImgFile" accept="image/*" onchange="loadFile(event)"><img id="addImgDisplay" src="https://cdn-icons-png.flaticon.com/512/4211/4211763.png" class="inputImg"></label>
-        <button class="submit" onclick="submit(inputTitle.value, inputDesc.value, addImgDisplay.src)">Submit</button>
+        <button class="submit" onclick="submit(inputTitle.value, inputDesc.value, addImgDisplay.src, titleColor.value, descColor.value)">Submit</button>
     </div>
 </body>
 </html>
