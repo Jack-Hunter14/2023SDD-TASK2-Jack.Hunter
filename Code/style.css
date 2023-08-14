@@ -80,6 +80,7 @@ div {
 }
 .inputImg {
     width: 70px;
+    height: 70px;
 }
 input[type="file"] {
     display: none;
